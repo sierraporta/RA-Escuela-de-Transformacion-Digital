@@ -73,9 +73,9 @@
     .ra-text{opacity:.95}
     .profile-list li, .tips-list li{margin: 8px 0}
 
-    .tips-source{display:inline-block; margin-left:6px; padding:2px 6px; border-radius:6px; font-size:10px; background:rgba(255,255,255,.08); color:#bcd2ff; border:1px solid rgba(255,255,255,.12)}
+    .tips-source{display:inline-block; margin-left:6px; padding:2px 6px; border-radius:6px; font-size:10px; background:rgba(255,255,255,.08); color:#E3F9A6; border:1px solid rgba(255,255,255,.12)}
     .tips-source:hover{filter:brightness(1.2)}
-    .tips-list li{display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:8px}
+    .tips-list li{display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:8px; color:#E3F9A6}
     .tips-text{flex:1}
     
     /* bullets estilizados para la sección "Por qué importa" */
@@ -84,10 +84,33 @@
       content: "✦";              /* cambia por ❖, ▹, › si prefieres */
       position:absolute;
       left:0; top:2px;
-      font-weight:700;
-      color:#c9d6ff;             /* se ve bien sobre el fondo azul-violeta */
+      font-weight:1000;
+      color:#E3F9A6;             /* se ve bien sobre el fondo azul-violeta */
       opacity:.95;
 }
+
+    /* Texto "Por qué importa" por programa */
+    article[data-code="CDAT"] .why-list .tips-text { color:#5CC8FF; }  /* Ciencia de Datos */
+    article[data-code="ISCO"] .why-list .tips-text { color:#8C7BFF; }  /* Sistemas y Computación */
+    article[data-code="CSOC"] .why-list .tips-text { color:#A57BFF; }  /* Comunicación Social */
+    article[data-code="MKTD"] .why-list .tips-text { color:#6FA8FF; }  /* Marketing y TD */
+
+    /* Bullets ✦ por programa (opcional) */
+    article[data-code="CDAT"] .why-list li::before { color:#5CC8FF; }
+    article[data-code="ISCO"] .why-list li::before { color:#8C7BFF; }
+    article[data-code="CSOC"] .why-list li::before { color:#A57BFF; }
+    article[data-code="MKTD"] .why-list li::before { color:#6FA8FF; }
+    
+    /* Texto "Por qué importa" por programa */
+    article[data-code="CDAT"] .profile-list li { color:#5CC8FF; font-style: italic !important;
+text-shadow: 0 1px 4px rgba(0,0,0,0.6);}  /* Ciencia de Datos */
+    article[data-code="ISCO"] .profile-list li { color:#8C7BFF; font-style: italic !important;
+text-shadow: 0 1px 4px rgba(0,0,0,0.6);}  /* Sistemas y Computación */
+    article[data-code="CSOC"] .profile-list li { color:#A57BFF; font-style: italic !important;
+text-shadow: 0 1px 4px rgba(0,0,0,0.6);}  /* Comunicación Social */
+    article[data-code="MKTD"] .profile-list li { color:#6FA8FF; font-style: italic !important;
+text-shadow: 20 10px 40px rgba(0.5,0.5,0.7,0.6);}  /* Marketing y TD */
+
 
     .anim{height: 120px; background: radial-gradient(120px 120px at 20% 20%, rgba(255,255,255,.10), transparent 70%); border-radius: 16px; border:1px solid rgba(255,255,255,.08); display:flex; align-items:center; justify-content:center}
     .pulse{animation: pulse 2.6s ease-in-out infinite}
@@ -167,10 +190,10 @@
 <section id="intro" class="wrap intro" aria-labelledby="intro-title">
   <div class="intro-inner">
     <div>
-      <h2 id="intro-title">¿Qué es la Transformación Digital?</h2>
-      <p>La <strong>transformación digital</strong> es la integración estratégica de tecnologías digitales en todos los aspectos de un negocio, incluyendo la cultura, los procesos y los modelos de negocio, para ofrecer un mayor valor a los clientes, mejorar la eficiencia y mantener la competitividad en un entorno digital en constante cambio. Va más allá de la simple adopción de herramientas; implica un <strong>cambio de mentalidad</strong> y la capacidad de adaptarse a las nuevas condiciones del mercado y las expectativas de los clientes.</p>
-      <p><strong>Rompe los límites</strong> e impulsa a las organizaciones hacia la revolución digital, la productividad, la optimización de procesos y el uso y desarrollo de tecnologías de punta.</p>
-      <p><strong>Trasciende</strong> los límites, piensa más allá de lo convencional, atrévete a explorar el horizonte digital y emprende tu propio camino a la autonomía y el éxito profesional.</p>
+      <h2 id="intro-title"; style="color: #FFFFCC;">La Transformación Digital...</h2>
+      <p style="color: #F0FFF0;">La <strong>transformación digital</strong> es la integración estratégica de tecnologías digitales en todos los aspectos de un negocio, incluyendo la cultura, los procesos y los modelos de negocio, para ofrecer un mayor valor a los clientes, mejorar la eficiencia y mantener la competitividad en un entorno digital en constante cambio. Va más allá de la simple adopción de herramientas; implica un <strong>cambio de mentalidad</strong> y la capacidad de adaptarse a las nuevas condiciones del mercado y las expectativas de los clientes.</p>
+      <p style="color: #F0FFF0;"><strong>Rompe los límites</strong> e impulsa a las organizaciones hacia la revolución digital, la productividad, la optimización de procesos y el uso y desarrollo de tecnologías de punta.</p>
+      <p style="color: #F0FFF0;"><strong>Trasciende</strong> los límites, piensa más allá de lo convencional, atrévete a explorar el horizonte digital y emprende tu propio camino a la autonomía y el éxito profesional.</p>
     </div>
     <figure class="intro-figure">
       <img src="https://www.revistacompensar.com/wp-content/uploads/2022/11/shutterstock_1405194650.jpg" alt="Ilustración conceptual de transformación digital: redes y tecnología" loading="lazy"/>
